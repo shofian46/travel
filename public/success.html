@@ -1,0 +1,85 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAF TRAVEL</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css" />
+    <!-- Xzomm CSS -->
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css" />
+    <!-- Gijg -->
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="frontend/styles/main.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+                <a href="index.html" class="navbar-brand">
+                    <img src="frontend/images/logo/Logo.png" />
+                </a>
+            </div>
+            <ul class="navbar-nav mr-auto d-none d-lg-block">
+                <li>
+                    <span class="text-muted"> | &nbsp; Beyond the explore of the world </span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End navbar -->
+
+    <!-- Header details -->
+    <main>
+        <div class="section-success d-flex align-items-center">
+            <div class="col text-center">
+                <img src="frontend/images/icon/ic_mail.png" alt="ic-success-payment" class="mb-5" />
+                <h1>Yay! Success..</h1>
+                <p>We've sent your email for trip instruction please read it as well</p>
+                <a href="index.html" class="btn btn-home-page mt-3 px-5"> Home Page </a>
+            </div>
+        </div>
+    </main>
+    <!-- End Header -->
+
+    <!-- Script js -->
+    <script src="frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Retina -->
+    <script src="frontend/libraries/retina/retina.js"></script>
+    <!-- Xzoom -->
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <!-- Gijgo -->
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <!-- Script Xzoom -->
+    <script>
+        $(document).ready(function() {
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomWidth: 500,
+                title: false,
+                tint: '#333',
+                Xoffset: 15,
+            });
+
+            $('.datepicker').datepicker({
+                uiLibrary: 'bootstrap4',
+                icons: {
+                    rightIcon: '<img src="frontend/images/icon/ic_calendar.jpg" />',
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
